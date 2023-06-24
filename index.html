@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/1dcc9f863c.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- owl carousel cdn link for css -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
+
+    <title>SuperSavvy | Service at your doorstep</title>
+</head>
+
+<body>
+    <!-- main div that wraps everything -->
+    <div class="main ">
+
+        <!-- header div -->
+        <div class="header container">
+            <h3 class="pageIndicator m-0 py-0 mt-4">
+                Home
+            </h3>
+            <p id="addPara" class="address mb-4 text-capitalize mt-0 text-secondary">thane, shubash nagar, thane west,
+                thane maharastra</i>
+            </p>
+            <h2 class="whatText text-capitalize">what service do <br> you need?</h2>
+            <div class="searchBox d-dlex align-itemss-center">
+                <i class="fas fa-search  border border-light border-end-0 rounded-start m-0 searchIcon"></i>
+                <input type="text" class="searchInpu  border border-light border-start-0 w-75 rounded-end "
+                    placeholder="Search for 'AC Service'">
+            </div>
+        </div>
+
+        <!-- div for categories -->
+        <div class="categories container mt-5">
+            <div class="categoryWrap">
+                <div onclick="openPopup(1)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://media.istockphoto.com/id/1027575800/vector/beauty-and-hair-salon-vector-logo-with-woman-face-and-letter-s.jpg?s=612x612&w=0&k=20&c=attZnF6ZZm2X2fyGDDX1z8Qn4S68Bw_dcBd4iLQiFwo="
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">AC Rapair</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0"><a href="detail.html" class="nav-list">AC gas refill</a></p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(2)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://static.vecteezy.com/system/resources/previews/020/975/125/original/face-and-barber-face-logo-and-man-s-salon-logo-png-black-and-white-design-vector.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">laptop & computer</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(3)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://t3.ftcdn.net/jpg/01/77/73/64/360_F_177736425_bP66D31xlmnSD0DnGFgw8owfYzXP507W.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">appliances Repair</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(4)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://marketplace.canva.com/EAFGzqoA8gU/1/0/1600w/canva-cleaning-services-vacuum-cleaner-logo-H9vuFzwtuJ0.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">cleaning</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(5)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/001/912/953/small/electrician-holding-lightning-bolt-mascot-circle-black-and-white-vector.jpg"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">bathroom cleaning</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(6)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <img src="https://scalebranding.com/wp-content/uploads/2021/04/1-22.jpg" alt="salon image"
+                        class="img-fluid w-75 border rounded categoryImg">
+                    <p class="text-capitalize w-75 ">pest control</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popupContainer" onclick="closePopup()">
+                <div id="popup" class="popup">
+                    <span class="close-button" onclick="closePopup()">&times;</span>
+                    <div id="openContent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- div for carousel -->
+        <div class="carousel mt-5 container mb-5 pb-2">
+            <div class="owl-carousel owl-theme ">
+                <div class="items mx-1 ">
+                    <img src="./images/WhatsApp Image 2023-06-22 at 11.18.56.jpeg"
+                        class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/WhatsApp Image 2023-06-22 at 11.18.56 (1).jpeg"
+                        class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/WhatsApp Image 2023-06-22 at 11.18.56 (2).jpeg"
+                        class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/WhatsApp Image 2023-06-22 at 11.18.56 (1).jpeg"
+                        class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/WhatsApp Image 2023-06-22 at 11.18.56.jpeg"
+                        class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./images/WhatsApp Image 2023-06-22 at 11.18.56 (2).jpeg"
+                        class="carouselImg" alt="">
+                </div>
+
+            </div>
+            <div class="banner container my-5">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/715/816/small/banner-abstract-background-board-for-text-and-message-design-modern-free-vector.jpg"
+                    class="bannerImg" style="width: 100%; height: 150px;" alt="">
+            </div>
+        </div>
+
+        <div class="trendingSevice container mb-5">
+            <h3 class="fs-bold"><i class="fas fa-chart-line me-2"></i>Trending Services</h3>
+            <div class="d-flex flex-wrap mb-5 pb-5">
+                <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                    <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                        class="img-fluid w-25 me-3" alt="ternding service">
+                    <div class="trendText">
+                        <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                        <p class="trendPrice text-success fw-bold fs-6"><span
+                                class="text-decoration-line-through text-secondary me-2 mb-0">$99</span>$89</p>
+                    </div>
+                    <div class="trendIcon ms-auto fs-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                    <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                        class="img-fluid w-25 me-3" alt="ternding service">
+                    <div class="trendText">
+                        <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                        <p class="trendPrice text-success fw-bold fs-6"><span
+                                class="text-decoration-line-through text-secondary me-2 mb-0">$99</span>$89</p>
+                    </div>
+                    <div class="trendIcon ms-auto fs-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                    <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                        class="img-fluid w-25 me-3" alt="ternding service">
+                    <div class="trendText">
+                        <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                        <p class="trendPrice text-success fw-bold fs-6"><span
+                                class="text-decoration-line-through text-secondary me-2 mb-0">$99</span>$89</p>
+                    </div>
+                    <div class="trendIcon ms-auto fs-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- div for footer -->
+        <div class="footer p-0 w-100 bg-white">
+            <footer class="d-flex w-100 justify-content-around  p-2">
+                <div class="navItem  text-center">
+                    <i class="fas fa-home "></i>
+                    <p class="m-0">Home</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-calendar-plus"></i>
+                    <p class="m-0">Bookings</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-comments"></i>
+                    <p class="m-0">Chat</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-user-alt"></i>
+                    <p class="m-0">Profile</p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- our own javascript -->
+    <script src="main.js"></script>
+
+    <!-- jQuery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- owl carousel javascript link -->
+    <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1.2,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

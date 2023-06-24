@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.BrandsWrap{
+    background-color: rgb(217, 217, 217);
+}
+
+.sticky{
+    position: fixed;
+    top: 0px;
+}
+
+.extrapadding{
+    padding: 90px;
+    background-color: red;
+    display: none;
+}
+
+/* .brandTagWrap{
+    padding: 5px;
+}
+
+.brandTag{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.brandTag img{
+    height: 100%;
+} */
+
+.brands img{
+    width: 100%;
+}
+
+/* service styling */
+/* .serviceDivs{
+    margin-top: 40px;
+} */
+
+.serviceWrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.serviceWrap h1{
+    font-weight:650;
+    font-size: 40;
+}
+
+.serviceTabWrap{
+    overflow-x: auto;
+    width: 100%;
+    background-color: white;
+    width: 100%;
+}
+
+.serviceTabs{
+    /* width: max-content; */
+    white-space: nowrap;
+}
+
+.serviceTab{
+    margin: 10px 0;
+    height: max-content;
+    padding: 10px 0px;
+}
+
+.serviceTab a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(228, 228, 228);
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.serviceCard{
+    width: 100%;
+    border-top: 1px solid rgb(248, 248, 248);
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.serviceCardImg{
+    width: 30%;
+}
+
+.serviceCardImg img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.serviceCardData{
+    width: 70%;
+    height: 100%;
+}
+
+.serviceName{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.serviceOffer{
+    font-weight: 700;
+    display: none;
+    color: rgb(255, 104, 104);
+}
+
+.serviceCardPrice{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.serviceDescWrap button{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.serviceDesc{
+    width: 70%;
+}
+
+.serviceBanner{
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+}
+
+/* REVIEW SECTION STYLING */
+.reviewCard{
+    width: 100%;
+    padding: 10px;
+}
+
+.userName{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.userRating i{
+    color: gold;
+}
+
+.ratingDate{
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.userReview{
+    margin-left: 10px;
+}
