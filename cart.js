@@ -1,17 +1,3 @@
-const nav = document.querySelector('#nav');
-const sticky = nav.offsetTop;
-
-//function for the tabs
-window.onscroll = function () { stickyFunc() };
-
-const stickyFunc = () => {
-    if (window.scrollY >= sticky) {
-        nav.classList.add('sticky');
-    } else {
-        nav.classList.remove('sticky');
-    };
-}
-
 const addBtns = document.querySelectorAll('.addBtn');
 const chooseServ = document.querySelector('#chooseServ');
 const chosenServ = document.querySelector('#chosenServ');
@@ -21,7 +7,7 @@ const counts = {}; // Object to store count values for each button
 // Iterate over each addBtn
 addBtns.forEach((addBtn, index) => {
     const countKey = `count_${index}`; // Generate a unique count key for each button
-    counts[countKey] = 0; // Initialize count for the button
+    counts[countKey] = 1; // Initialize count for the button
     // Attach click event listener to the button
     addBtn.addEventListener('click', () => {
         counts[countKey] += 1; // Increment count for the button
@@ -30,23 +16,22 @@ addBtns.forEach((addBtn, index) => {
         // chooseServ.style.display = 'none';
         // chosenServ.style.display = 'flex';
         if (counts[countKey] !== 0) {
-            addBtn.style.width = '90px'
             addBtn.innerHTML = `${counts[countKey]} +`;
-            chooseServ.style.display = 'none';
-            chosenServ.style.display = 'flex';
+            // chooseServ.style.display = 'none';
+            // chosenServ.style.display = 'flex';
             minusBtns[index].style.display = 'block';
         }
     });
 
     minusBtns[index].addEventListener('click', () => {
-        if (counts[countKey] > 0) {
+        if (counts[countKey] > 1) {
             counts[countKey] -= 1;
             console.log(counts[countKey]);
 
             if (counts[countKey] === 0) {
                 addBtn.innerHTML = 'Add';
-                chooseServ.style.display = 'flex';
-                chosenServ.style.display = 'none';
+                // chooseServ.style.display = 'flex';
+                // chosenServ.style.display = 'none';
                 addBtn.style.width = '70px'
                 minusBtns[index].style.display = 'none';
             } else {

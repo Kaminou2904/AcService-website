@@ -1,0 +1,29 @@
+.cartHeader{
+    box-shadow: 0 0 10px rgb(201, 201, 201);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.billWrap{
+    box-shadow: 0 0 10px rgb(201, 201, 201);
+}
+
+.payment{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.popupContainer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    max-height: 80vh;
+    min-height: 50vh;
+    display: none;
+}
+
+.popup{
+    width: 100%;
+}
