@@ -2,23 +2,32 @@ const addBtns = document.querySelectorAll('.addBtn');
 const chooseServ = document.querySelector('#chooseServ');
 const chosenServ = document.querySelector('#chosenServ');
 const minusBtns = document.querySelectorAll('#minusBtn');
+const payBtn = document.querySelector('#payBtn');
+const popupContainer = document.querySelector('.popupContainer');
+const manualLocaBtn = document.querySelector('#manualLocationBtn');
+const manualLocaDiv = document.querySelector('#manualLoca');
+const nextBtn1 = document.querySelector('#nextBtn1');
+const nextBtn2 = document.querySelector('#nextBtn2');
+const mobileNoDiv = document.querySelector('#mobileNo');
+const addressCont = document.querySelector('#addressContainer');
+const timeSlotDiv = document.querySelector('#timeSlot');
+const timeCards = document.querySelectorAll('.timeCard');
+const submitBtn = document.querySelector('#submitBtn');
+const thanku = document.querySelector('#thanku');
+const doneBtn = document.querySelector('#done');
 const counts = {}; // Object to store count values for each button
 
 // Iterate over each addBtn
 addBtns.forEach((addBtn, index) => {
     const countKey = `count_${index}`; // Generate a unique count key for each button
     counts[countKey] = 1; // Initialize count for the button
+
     // Attach click event listener to the button
     addBtn.addEventListener('click', () => {
         counts[countKey] += 1; // Increment count for the button
         console.log(counts[countKey]);
-
-        // chooseServ.style.display = 'none';
-        // chosenServ.style.display = 'flex';
         if (counts[countKey] !== 0) {
             addBtn.innerHTML = `${counts[countKey]} +`;
-            // chooseServ.style.display = 'none';
-            // chosenServ.style.display = 'flex';
             minusBtns[index].style.display = 'block';
         }
     });
@@ -30,8 +39,6 @@ addBtns.forEach((addBtn, index) => {
 
             if (counts[countKey] === 0) {
                 addBtn.innerHTML = 'Add';
-                // chooseServ.style.display = 'flex';
-                // chosenServ.style.display = 'none';
                 addBtn.style.width = '70px'
                 minusBtns[index].style.display = 'none';
             } else {
@@ -40,3 +47,43 @@ addBtns.forEach((addBtn, index) => {
         }
     });
 });
+
+// payment button
+payBtn.addEventListener('click', ()=>{
+    popupContainer.style.display = 'flex';
+})
+
+// functions for the form
+manualLocaBtn.addEventListener('click', ()=>{
+    if (manualLocaDiv.style.display == 'block') {
+        manualLocaDiv.style.display = 'none';
+    } else {
+        manualLocaDiv.style.display = 'block';
+    }
+})
+
+nextBtn1.addEventListener('click', ()=>{
+    addressCont.style.display = 'none';
+    mobileNoDiv.style.display = 'block';
+});
+
+nextBtn2.addEventListener('click', ()=>{
+    mobileNoDiv.style.display = 'none';
+    timeSlotDiv.style.display = 'block';
+});
+
+timeCards.forEach((timeCard, index)=>{
+    timeCard.addEventListener('click', ()=>{
+        console.log('hello from time card ', index);
+    })
+});
+
+submitBtn.addEventListener('click', ()=>{
+    console.log('form was submitted');
+    timeSlotDiv.style.display = 'none';
+    thanku.style.display = 'block';
+});
+
+doneBtn.addEventListener('click', ()=>{
+    popupContainer.style.display = 'none';
+})

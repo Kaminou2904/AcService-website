@@ -85,17 +85,70 @@
         </div>
 
         <div class="payment p-2">
-            <div class="paymentWrap p-3 text-white rounded-pill bg-secondary">
+            <div id="payBtn" class="paymentWrap p-3 text-white rounded-pill bg-secondary">
                 <p class="fs-4 fw-bold m-0">
-                    Proceed 
+                    Proceed
                 </p>
             </div>
         </div>
 
-        <div class="popupContainer p-3 bg-white">
-            <div class="popup">
+        <div class="popupContainer">
+            <div class="popup p-3 bg-white">
                 <div class="popupForm">
-                    <input type="tel" class="form-control fs-4" placeholder="enter your mobile number">
+                    <div id="addressContainer" class="addressContainer">
+                        <button id="currentLoca"
+                            class="currentLoca btn btn-success my-2 fs-4 w-100 p-3 rounded-pill">Use Current
+                            Location</button><br>
+                        <button id="manualLocationBtn" class="btn btn-secondary fs-4 w-100 p-3 rounded-pill">Enter
+                            Location Manually</button>
+                        <div id="manualLoca" class="text-end">
+                            <!-- <h3 class="mb-2">Manual Location</h3> -->
+                            <input type="text" class="form-control my-2 fs-5 "
+                                placeholder="Enter Flat/Building name. Ex. Powai Plaza">
+                            <input type="text" class="form-control my-2 fs-5 "
+                                placeholder="Enter landmark. Ex. near Tanishq">
+                            <input type="text" class="form-control my-2 fs-5 "
+                                placeholder="Enter Region. Ex. Bandra, Powai">
+                            <button id="nextBtn1" class="ms-auto btn btn-secondary">Next <i
+                                    class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                    <div id="mobileNo" class="text-end my-2">
+                        <input type="tel" class="form-control fs-5 my-2" placeholder="enter mobile number">
+                        <button id="nextBtn2" class="ms-auto btn btn-secondary">Next <i
+                                class="fas fa-arrow-right ms-2"></i></button>
+                    </div>
+                    <div class="timeSlot text-end" id="timeSlot">
+                        <div class="timeCardCont ">
+                            <div class="timeCardWrap row container">
+                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                    <p class="date my-0">26 JUN</p>
+                                    <p class="time my-0">10am - 12pm</p>
+                                </div>
+                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                    <p class="date my-0">26 JUN</p>
+                                    <p class="time my-0">12pm - 2pm</p>
+                                </div>
+                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                    <p class="date my-0">26 JUN</p>
+                                    <p class="time my-0">2pm - 4pm</p>
+                                </div>
+                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                    <p class="date my-0">26 JUN</p>
+                                    <p class="time my-0">4pm - 6pm</p>
+                                </div>
+                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                    <p class="date my-0">26 JUN</p>
+                                    <p class="time my-0">6pm - 8pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="submitBtn" class="btn btn-success">Submit</button>
+                    </div>
+                    <div id="thanku" class="fs-3 my-auto text-center fw-bold">
+                        Thank you very much for booking our services
+                        <button id="done" class="btn btn-success fs-4 my-2 mt-5 w-100 rounded-pill">Done</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,15 +157,10 @@
 
 
     <script src="cart.js"></script>
-    <!-- jQuery cdn link -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
     <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <!-- owl carousel javascript link -->
-    <!-- <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script> -->
 </body>
 
 </html>
