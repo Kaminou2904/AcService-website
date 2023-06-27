@@ -80,7 +80,7 @@ nextBtn1.addEventListener('click', ()=>{
 nextBtn2.addEventListener('click', ()=>{
     mobileNoDiv.style.display = 'none';
     timeSlotDiv.style.display = 'block';
-    formData.name = mobNo.value;
+    formData.number = mobNo.value;
 });
 
 crossBtn.addEventListener('click', ()=>{
