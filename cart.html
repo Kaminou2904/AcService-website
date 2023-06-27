@@ -80,7 +80,8 @@
 
         <div class="moreItems container">
             <div class="moreItemWrap rounded-3 bg-white p-3 mt-3">
-                <p class="mb-0"><a href="detail.html" class="nav-link"><i class="fas fa-plus me-2 rounded-circle bg-dark text-white p-1"></i>Add more items</a></p>
+                <p class="mb-0"><a href="detail.html" class="nav-link"><i
+                            class="fas fa-plus me-2 rounded-circle bg-dark text-white p-1"></i>Add more items</a></p>
             </div>
         </div>
 
@@ -129,31 +130,47 @@
         <div class="popupContainer">
             <div class="popup p-3 bg-white">
                 <div class="crossBtnWrap mb-2">
-                    <div id="crossBtn" class="bg-secondary text-white text-center rounded-circle d-flex justify-content-center align-items-center fs-2">
+                    <div id="crossBtn"
+                        class="bg-secondary text-white text-center rounded-circle d-flex justify-content-center align-items-center fs-2">
                         &times;
                     </div>
                 </div>
                 <div class="popupForm">
                     <div id="addressContainer" class="addressContainer">
-                        <button id="currentLoca"
-                            class="currentLoca btn text-white my-2 fs-4 w-100 p-3 rounded-3">Use Current
+                        <button id="currentLoca" class="currentLoca btn text-white my-2 fs-4 w-100 p-3 rounded-3">Use
+                            Current
                             Location</button><br>
                         <button id="manualLocationBtn" class="btn btn-secondary fs-4 w-100 p-3 rounded-3">Enter
                             Location Manually</button>
                         <div id="manualLoca" class="text-end">
                             <!-- <h3 class="mb-2">Manual Location</h3> -->
-                            <input id="building" type="text" class="form-control my-2 fs-5 "
-                                placeholder="Enter Flat/Building name. Ex. Powai Plaza">
-                            <input id="landmark" type="text" class="form-control my-2 fs-5 "
-                                placeholder="Enter landmark. Ex. near Tanishq">
-                            <input id="region" type="text" class="form-control my-2 fs-5 "
-                                placeholder="Enter Region. Ex. Bandra, Powai">
+                            <fieldset class="border p-2 pt-0 mb-2 text-start">
+                                <legend class="w-auto py-1 pb-0 border-bottom-0">
+                                Building Name</legend>
+                                <input id="building" type="text" class="form-control my-2 fs-5 "
+                                    placeholder="Ex. Powai Plaza">
+                            </fieldset>
+                                <fieldset class="border p-2 pt-0 mb-2 text-start">
+                                    <legend class="w-auto py-1 pt-0 border-bottom-0">Landmark</legend>
+                                    <input id="landmark" type="text" class="form-control my-2 fs-5 "
+                                    placeholder="Ex. near Tanishq">
+                                </fieldset>
+                                <fieldset class="border p-2 pt-0 mb-2 text-start">
+                                    <legend class="w-auto py-1 pt-0 border-bottom-0">Region</legend>
+                                    <input id="region" type="text" class="form-control my-2 fs-5 "
+                                    placeholder="Ex. Bandra, Powai">
+                                </fieldset>
+                            
                             <button id="nextBtn1" class="ms-auto btn btn-secondary rounded-3">Next <i
                                     class="fas fa-arrow-right ms-2 "></i></button>
                         </div>
                     </div>
                     <div id="mobileNo" class="text-end my-2">
-                        <input type="tel" id="mobNo" class="form-control fs-5 my-2" placeholder="enter mobile number">
+                        <fieldset class="border p-2 pt-0 mb-2 text-start">
+                            <legend class="w-auto py-1 pt-0 border-bottom-0">Region</legend>
+                            <input type="tel" id="mobNo" class="form-control fs-5 my-2" placeholder="enter mobile number">
+                        </fieldset>
+                        
                         <button id="nextBtn2" class="ms-auto btn btn-secondary rounded-3">Next <i
                                 class="fas fa-arrow-right ms-2 "></i></button>
                     </div>
