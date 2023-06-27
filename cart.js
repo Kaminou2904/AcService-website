@@ -85,6 +85,9 @@ nextBtn2.addEventListener('click', ()=>{
 
 crossBtn.addEventListener('click', ()=>{
     popupContainer.style.display = 'none';
+    timeSlotDiv.style.display = 'none';
+    mobileNoDiv.style.display = 'none';
+    thanku.style.display = 'none';
 })
 
 timeCards.forEach((timeCard, index)=>{
