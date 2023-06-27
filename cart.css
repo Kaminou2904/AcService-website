@@ -38,6 +38,13 @@
     color: #000;
 }
 
+#crossBtn{
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+}
+
 .minusBtn{
     background-color: #f7f5ff;
 }

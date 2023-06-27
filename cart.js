@@ -8,6 +8,7 @@ const manualLocaBtn = document.querySelector('#manualLocationBtn');
 const manualLocaDiv = document.querySelector('#manualLoca');
 const nextBtn1 = document.querySelector('#nextBtn1');
 const nextBtn2 = document.querySelector('#nextBtn2');
+const crossBtn = document.querySelector('#crossBtn');
 const mobileNoDiv = document.querySelector('#mobileNo');
 const addressCont = document.querySelector('#addressContainer');
 const timeSlotDiv = document.querySelector('#timeSlot');
@@ -81,6 +82,10 @@ nextBtn2.addEventListener('click', ()=>{
     timeSlotDiv.style.display = 'block';
     formData.name = mobNo.value;
 });
+
+crossBtn.addEventListener('click', ()=>{
+    popupContainer.style.display = 'none';
+})
 
 timeCards.forEach((timeCard, index)=>{
     timeCard.addEventListener('click', ()=>{
