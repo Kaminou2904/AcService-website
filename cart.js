@@ -101,10 +101,10 @@ submitBtn.addEventListener('click', ()=>{
     timeSlotDiv.style.display = 'none';
     thanku.style.display = 'block';
     formData.time = 'time'
+    console.log(formData)
 });
 
 doneBtn.addEventListener('click', ()=>{
     popupContainer.style.display = 'none';
     thanku.style.display = 'none'
-    console.log(formData)
 })
