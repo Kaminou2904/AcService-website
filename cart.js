@@ -15,7 +15,12 @@ const timeCards = document.querySelectorAll('.timeCard');
 const submitBtn = document.querySelector('#submitBtn');
 const thanku = document.querySelector('#thanku');
 const doneBtn = document.querySelector('#done');
+const buildingInput = document.querySelector('#building');
+const landmarkInput = document.querySelector('#landmark');
+const regionInput = document.querySelector('#region');
+const mobNo = document.querySelector('#mobNo');
 const counts = {}; // Object to store count values for each button
+const formData = {};
 
 // Iterate over each addBtn
 addBtns.forEach((addBtn, index) => {
@@ -51,6 +56,8 @@ addBtns.forEach((addBtn, index) => {
 // payment button
 payBtn.addEventListener('click', ()=>{
     popupContainer.style.display = 'flex';
+    addressCont.style.display = 'block';
+    manualLocaDiv.style.display = 'none';
 })
 
 // functions for the form
@@ -60,16 +67,19 @@ manualLocaBtn.addEventListener('click', ()=>{
     } else {
         manualLocaDiv.style.display = 'block';
     }
+    
 })
 
 nextBtn1.addEventListener('click', ()=>{
     addressCont.style.display = 'none';
     mobileNoDiv.style.display = 'block';
+    formData.address = [{'building': buildingInput.value}, {'landmark': landmarkInput.value}, {'region': regionInput.value}];
 });
 
 nextBtn2.addEventListener('click', ()=>{
     mobileNoDiv.style.display = 'none';
     timeSlotDiv.style.display = 'block';
+    formData.name = mobNo.value;
 });
 
 timeCards.forEach((timeCard, index)=>{
@@ -82,8 +92,11 @@ submitBtn.addEventListener('click', ()=>{
     console.log('form was submitted');
     timeSlotDiv.style.display = 'none';
     thanku.style.display = 'block';
+    formData.time = 'time'
 });
 
 doneBtn.addEventListener('click', ()=>{
     popupContainer.style.display = 'none';
+    thanku.style.display = 'none'
+    console.log(formData)
 })

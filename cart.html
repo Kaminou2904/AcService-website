@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/1dcc9f863c.js" crossorigin="anonymous"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="detail.css">
+    <!-- <link rel="stylesheet" href="detail.css"> -->
     <link rel="stylesheet" href="cart.css">
 
     <!-- owl carousel cdn link for css -->
@@ -25,49 +25,83 @@
 
 <body>
 
-    <div class="main">
+    <div class="main bg">
 
         <div class="cart">
-            <h2 class="cartHeader bg-white p-2">Your Cart</h2>
-            <div class="cartBody pt-5 container">
-                <div class="cartItemWrap pt-3 ">
-                    <div class="cartItem d-flex justify-content-between align-items-center">
-                        <div class="cartServName fs-4">Something</div>
-                        <div class="btns d-flex">
-                            <button class="minusBtn btn btn-secondary d-flex" id="minusBtn">-</button>
-                            <button class="addBtn btn btn-secondary px-3" id="addBtn">1+</button>
-                        </div>
-                        <div class="cartServPrice fw-bolder fs-5">$999</div>
+            <h2 class="cartHeader p-2">Your Cart</h2>
+            <div class="container pt-3">
+                <div class="delevary">
+                    <div class="delevaryWrap bg-white rounded-3 p-3">
+                        <p class="mb-0"><i class="fas fa-biking me-2"></i>Technician gets there in 2hrs 29min</p>
                     </div>
-                    <hr>
                 </div>
-                <div class="cartItemWrap">
-                    <div class="cartItem d-flex justify-content-between align-items-center">
-                        <div class="cartServName fs-4">Something</div>
-                        <div class="btns d-flex">
-                            <button class="minusBtn btn btn-secondary d-flex" id="minusBtn">-</button>
-                            <button class="addBtn btn btn-secondary px-3" id="addBtn">1+</button>
-                        </div>
-                        <div class="cartServPrice fw-bolder fs-5">$999</div>
-                    </div>
-                    <hr>
+                <div class="lineText mb-3 mt-3">
+                    <div class="line"></div>
+                    <div class="text text-secondary">Your bookings</div>
+                    <div class="line"></div>
                 </div>
-                <div class="cartItemWrap">
-                    <div class="cartItem d-flex justify-content-between align-items-center">
-                        <div class="cartServName fs-4">Something</div>
-                        <div class="btns d-flex">
-                            <button class="minusBtn btn btn-secondary d-flex" id="minusBtn">-</button>
-                            <button class="addBtn btn btn-secondary px-3" id="addBtn">1+</button>
+                <div class="cartBody rounded-3 pb-1 container bg-white">
+                    <div class="cartItemWrap pt-3">
+                        <div class="cartItem d-flex justify-content-between align-items-center">
+                            <div class="cartServName fs-4">Something</div>
+                            <div class="btns d-flex">
+                                <button class="minusBtn btn  me-2 d-flex" id="minusBtn">-</button>
+                                <button class="addBtn btn  px-3" id="addBtn">1+</button>
+                            </div>
+                            <div class="cartServPrice fw-bolder fs-5">$999</div>
                         </div>
-                        <div class="cartServPrice fw-bolder fs-5">$999</div>
+                        <hr>
                     </div>
-                    <hr>
+                    <div class="cartItemWrap">
+                        <div class="cartItem d-flex justify-content-between align-items-center">
+                            <div class="cartServName fs-4">Something</div>
+                            <div class="btns d-flex">
+                                <button class="minusBtn btn  me-2 d-flex" id="minusBtn">-</button>
+                                <button class="addBtn btn  px-3" id="addBtn">1+</button>
+                            </div>
+                            <div class="cartServPrice fw-bolder fs-5">$999</div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="cartItemWrap">
+                        <div class="cartItem d-flex justify-content-between align-items-center">
+                            <div class="cartServName fs-4">Something</div>
+                            <div class="btns d-flex">
+                                <button class="minusBtn btn  me-2 d-flex" id="minusBtn">-</button>
+                                <button class="addBtn btn  px-3" id="addBtn">1+</button>
+                            </div>
+                            <div class="cartServPrice fw-bolder fs-5">$999</div>
+                        </div>
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="moreItems container">
+            <div class="moreItemWrap rounded-3 bg-white p-3 mt-3">
+                <p class="mb-0"><a href="detail.html" class="nav-link"><i class="fas fa-plus me-2 rounded-circle bg-dark text-white p-1"></i>Add more items</a></p>
+            </div>
+        </div>
+
+        <div class="coupon container pt-5">
+            <div class="lineText mb-3">
+                <div class="line"></div>
+                <div class="text text-secondary">Coupon</div>
+                <div class="line"></div>
+            </div>
+            <div class="couponWrap container bg-white mt-2 p-3 rounded-3">
+                <p class="mb-0"><i class="fas fa-tags me-2"></i>Apply coupon</p>
+            </div>
+        </div>
+
         <div class="billing container mt-5 ">
-            <div class="billWrap p-3 rounded-4">
+            <div class="lineText mb-3">
+                <div class="line"></div>
+                <div class="text text-secondary">Bill summary</div>
+                <div class="line"></div>
+            </div>
+            <div class="billWrap p-3 rounded-3 bg-white">
                 <div class="totalServ d-flex justify-content-between">
                     <div class="totalText fs-4 fw-bold">Total Services</div>
                     <div class="totalPrice fw-bolder fs-4">$999</div>
@@ -85,7 +119,7 @@
         </div>
 
         <div class="payment p-2">
-            <div id="payBtn" class="paymentWrap p-3 text-white rounded-pill bg-secondary">
+            <div id="payBtn" class="paymentWrap p-2 text-center text-white rounded-3">
                 <p class="fs-4 fw-bold m-0">
                     Proceed
                 </p>
@@ -97,57 +131,63 @@
                 <div class="popupForm">
                     <div id="addressContainer" class="addressContainer">
                         <button id="currentLoca"
-                            class="currentLoca btn btn-success my-2 fs-4 w-100 p-3 rounded-pill">Use Current
+                            class="currentLoca btn text-white my-2 fs-4 w-100 p-3 rounded-3">Use Current
                             Location</button><br>
-                        <button id="manualLocationBtn" class="btn btn-secondary fs-4 w-100 p-3 rounded-pill">Enter
+                        <button id="manualLocationBtn" class="btn btn-secondary fs-4 w-100 p-3 rounded-3">Enter
                             Location Manually</button>
                         <div id="manualLoca" class="text-end">
                             <!-- <h3 class="mb-2">Manual Location</h3> -->
-                            <input type="text" class="form-control my-2 fs-5 "
+                            <input id="building" type="text" class="form-control my-2 fs-5 "
                                 placeholder="Enter Flat/Building name. Ex. Powai Plaza">
-                            <input type="text" class="form-control my-2 fs-5 "
+                            <input id="landmark" type="text" class="form-control my-2 fs-5 "
                                 placeholder="Enter landmark. Ex. near Tanishq">
-                            <input type="text" class="form-control my-2 fs-5 "
+                            <input id="region" type="text" class="form-control my-2 fs-5 "
                                 placeholder="Enter Region. Ex. Bandra, Powai">
-                            <button id="nextBtn1" class="ms-auto btn btn-secondary">Next <i
-                                    class="fas fa-arrow-right ms-2"></i></button>
+                            <button id="nextBtn1" class="ms-auto btn btn-secondary rounded-3">Next <i
+                                    class="fas fa-arrow-right ms-2 "></i></button>
                         </div>
                     </div>
                     <div id="mobileNo" class="text-end my-2">
-                        <input type="tel" class="form-control fs-5 my-2" placeholder="enter mobile number">
-                        <button id="nextBtn2" class="ms-auto btn btn-secondary">Next <i
-                                class="fas fa-arrow-right ms-2"></i></button>
+                        <input type="tel" id="mobNo" class="form-control fs-5 my-2" placeholder="enter mobile number">
+                        <button id="nextBtn2" class="ms-auto btn btn-secondary rounded-3">Next <i
+                                class="fas fa-arrow-right ms-2 "></i></button>
                     </div>
                     <div class="timeSlot text-end" id="timeSlot">
                         <div class="timeCardCont ">
                             <div class="timeCardWrap row container">
-                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                <div
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
                                     <p class="date my-0">26 JUN</p>
                                     <p class="time my-0">10am - 12pm</p>
                                 </div>
-                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                <div
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
                                     <p class="date my-0">26 JUN</p>
                                     <p class="time my-0">12pm - 2pm</p>
                                 </div>
-                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                <div
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
                                     <p class="date my-0">26 JUN</p>
                                     <p class="time my-0">2pm - 4pm</p>
                                 </div>
-                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                <div
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
                                     <p class="date my-0">26 JUN</p>
                                     <p class="time my-0">4pm - 6pm</p>
                                 </div>
-                                <div class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
+                                <div
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
                                     <p class="date my-0">26 JUN</p>
                                     <p class="time my-0">6pm - 8pm</p>
                                 </div>
                             </div>
                         </div>
-                        <button id="submitBtn" class="btn btn-success">Submit</button>
+                        <button id="submitBtn" class="btn btn-success
+                        rounded-3 mt-2">Submit</button>
                     </div>
                     <div id="thanku" class="fs-3 my-auto text-center fw-bold">
                         Thank you very much for booking our services
-                        <button id="done" class="btn btn-success fs-4 my-2 mt-5 w-100 rounded-pill">Done</button>
+                        <button id="done" class="btn btn-success fs-4 my-2 mt-5 w-100 rounded-3">Done</button>
                     </div>
                 </div>
             </div>
