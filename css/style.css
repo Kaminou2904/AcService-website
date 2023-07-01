@@ -4,17 +4,18 @@
     box-sizing: border-box;
 }
 
-.header h3{
-    font-size: 20px;
+.mainHeader h4{
+    font-size: 18px !important;
     color: #404040;
 }
 
 .fa-map-marker-alt{
     color: #7461C6;
+    font-size: 16px;
 }
 
 .address{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #currentLoca{
@@ -60,16 +61,19 @@
 }
 
 .searchBox{
-    box-shadow: 0 0 15px #cccbcb;
+    /* box-shadow: 0 0 15px #cccbcb; */
     border-radius: 10px;
     overflow: hidden;
+    border: 0.6px solid rgb(165, 165, 165);
 }
 
 .searchIcon{
-    font-size: 14px;
+    font-size: 16px;
     padding: 14px;
     padding-bottom: 13px;
+    padding-left: 20px;
     padding-right: 10px;
+    color: #7461C6;
     /* box-shadow: -6px 0 10px rgb(0, 0, 0, 0.5); */
 }
 
@@ -184,8 +188,13 @@
     box-shadow: 0 0 10px rgba(112, 112, 112, 0.1);
 }
 
+.trentName{
+    font-size: 20px !important;
+}
+
 .trendItem img{
     border-radius: 10px;
+    padding: 10px;
 }
 
 .trendItem p{

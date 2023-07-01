@@ -31,7 +31,7 @@ addBtns.forEach((addBtn, index) => {
     // Attach click event listener to the button
     addBtn.addEventListener('click', () => {
         counts[countKey] += 1; // Increment count for the button
-        console.log(counts[countKey]);
+        // console.log(counts[countKey]);
         if (counts[countKey] !== 0) {
             addBtn.innerHTML = `${counts[countKey]} +`;
             minusBtns[index].style.display = 'block';
@@ -41,7 +41,7 @@ addBtns.forEach((addBtn, index) => {
     minusBtns[index].addEventListener('click', () => {
         if (counts[countKey] > 1) {
             counts[countKey] -= 1;
-            console.log(counts[countKey]);
+            // console.log(counts[countKey]);
 
             if (counts[countKey] === 0) {
                 addBtn.innerHTML = 'Add';
@@ -73,26 +73,26 @@ manualLocaBtn.addEventListener('click', ()=>{
 
 nextBtn1.addEventListener('click', ()=>{
     addressCont.style.display = 'none';
-    mobileNoDiv.style.display = 'block';
+    timeSlotDiv.style.display = 'block';
     formData.address = [{'building': buildingInput.value}, {'landmark': landmarkInput.value}, {'region': regionInput.value}];
 });
 
-nextBtn2.addEventListener('click', ()=>{
-    mobileNoDiv.style.display = 'none';
-    timeSlotDiv.style.display = 'block';
-    formData.number = mobNo.value;
-});
+// nextBtn2.addEventListener('click', ()=>{
+//     // mobileNoDiv.style.display = 'none';
+//     timeSlotDiv.style.display = 'block';
+//     formData.number = mobNo.value;
+// });
 
 crossBtn.addEventListener('click', ()=>{
     popupContainer.style.display = 'none';
     timeSlotDiv.style.display = 'none';
-    mobileNoDiv.style.display = 'none';
+    // mobileNoDiv.style.display = 'none';
     thanku.style.display = 'none';
 })
 
 timeCards.forEach((timeCard, index)=>{
     timeCard.addEventListener('click', ()=>{
-        console.log('hello from time card ', index);
+        // console.log('hello from time card ', index);
     })
 });
 

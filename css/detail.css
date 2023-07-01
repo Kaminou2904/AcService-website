@@ -29,6 +29,11 @@ html{
     margin-top: 60px;
 }
 
+.activeTab{
+    background-color: black !important;
+    color: white !important;
+}
+
 .extrapadding{
     padding: 90px;
     background-color: red;
@@ -103,6 +108,52 @@ html{
     background-color: #7461C6;
 }
 
+.choseServPrice{
+    font-size: 16px;
+}
+
+.noOfItems{
+    border-right: 3px solid white;
+}
+
+.viewCart a{
+    color: #7461C6;
+    background-color: white;
+    font-size: 16px !important;
+}
+
+.popupContainer{
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: rgba(163, 163, 163, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: end;
+}
+
+.popupWrap{
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+}
+
+.crossBtn{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
 .serviceWrap{
     width: 100%;
     overflow: hidden;
@@ -143,6 +194,10 @@ html{
 .tab{
     font-size: 12px;
     font-weight: 650;
+}
+
+.tab img{
+    height: 30px;
 }
 
 .serviceTabWrap{

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    min-height: 100vh;
+    background-color: rgb(239, 239, 239);;
+}
+
+.DOB{
+    font-size: 13px;
+}
+
+.status{
+    font-weight: 500;
+}

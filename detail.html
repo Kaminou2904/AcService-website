@@ -47,7 +47,7 @@
         <div class="service pt-4 ">
             <div class="serviceWrap">
                 <h1 class="my-1 px-2 container">AC Service and Repair</h1>
-                <p class="px-2 container"><i class="fas fa-star me-2"></i> 4.8 (5.99 Million Bookings)</p>
+                <p class="px-2 container"> <span class="me-1 mt-2 bg-success p-1 rounded-2 text-white">4.8<i class="fas fa-star ms-1"></i></span> (5.99 Million Bookings)</p>
 
 
                 <div class="bg pt-3">
@@ -97,19 +97,19 @@
                         </div>
                     </div>
 
-                    <div id="nav" class="serviceTabWrap px-2 w-100 container">
+                    <div id="nav" class="serviceTabWrap px-2 w-100 container mx-auto">
                         <div class="serviceTabs p-0 d-flex">
                             <div class="serviceTab">
-                                <a href="#acServ" class="tab rounded-2">AC Service</a>
+                                <a href="#acServ" onclick="tabNSec('acServ')" class="tab rounded-2 px-2"><img src="./assets/images/acServiceIcon.jpg" alt="">AC Service</a>
                             </div>
                             <div class="serviceTab">
-                                <a href="#acRep" class="tab rounded-2">AC Repair</a>
+                                <a href="#acRep" onclick="tabNSec('acRep')" class="tab rounded-2 px-2"><img src="./assets/images/acRepairIcon.png" class="me-1">AC Repair</a>
                             </div>
                             <div class="serviceTab">
-                                <a href="#acGas" class="tab rounded-2">AC Gas Refill</a>
+                                <a href="#acGas" onclick="tabNSec('acGas')" class="tab rounded-2 px-2"><img src="./assets/images/acGasIcon.jpg" alt="">AC Gas Refill</a>
                             </div>
                             <div class="serviceTab">
-                                <a href="#acInsa" class="tab rounded-2">AC
+                                <a href="#acInsa" onclick="tabNSec('acInsa')" class="tab rounded-2 px-2"><img src="./assets/images/acInstalltionIcon.jpg" alt="">AC
                                     Installation</a>
                             </div>
                         </div>
@@ -351,11 +351,25 @@
                 </p>
             </div>
             <div id="chosenServ"
-                class="chosenServWrap container justify-content-between  p-2 my-2 rounded-3 fs-5 fw-bold text-white">
-                <div class="choseServPrice">Rs 999</div>
-                <div class="viewCart">
-                    <p class="m-0"><a href="cart.html" class="nav-link fs-5">View cart</a></p>
+                class="chosenServWrap container justify-content-between p-2 my-2 rounded-3 fs-5 fw-bold text-white align-items-start">
+                <div class="choseServPrice d-flex mt-1">
+                    <div class="noOfItems p-0 pe-1">1 item</div>
+                    <div class="price p-0 ps-1">Rs 999</div>
                 </div>
+                <div class="viewCart">
+                    <p class="m-0"><a href="cart.html" class=" fs-5 btn py-1 fw-bold p-2">Proceed</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupContainer" class="popupContainer">
+            <div class="popupWrap container p-3">
+                <div class="crossBtnDiv text-end">
+                    <div id="crossBtn" class="crossBtn btn btn-secondary rounded-circle fs-4">&times;</div>
+                </div>
+                <p class="mb-0 fs-5 mb-1">Enter your mobile number</p>
+                <input type="tel" id="noInput" class="form-control fs-5 p-2" value="+91">
+                <div id="nextBtn" class="btn btn-secondary ms-auto mt-2 w-100 fs-6">Next</div>
             </div>
         </div>
 
