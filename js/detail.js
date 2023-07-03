@@ -1,5 +1,5 @@
 const nav = document.querySelector('#nav');
-const serviceCardWrap = document.querySelectorAll('.serviceCardWrap');
+const serviceCardWraps = document.querySelectorAll('.serviceCardWrap');
 const sticky = nav.offsetTop;
 
 //function for the tabs
@@ -30,24 +30,28 @@ function tabNSec(id) {
     $('[href="#' + id + '"]').addClass('activeTab'); // Add active class to the clicked tab
 }
 
-function checkDivOnTop(divId) {
-    var div = document.getElementById(divId);
-    var rect = div.getBoundingClientRect();
-    var offsetTop = rect.top;
-  
-    // Remove activeTab class from all tabs
-    var allTabs = document.querySelectorAll('.tab');
-    allTabs.forEach(function(tab) {
-      tab.classList.remove('activeTab');
-    });
-  
-    if (offsetTop <= 100) {
-      var tabLink = document.querySelector('[href="#' + divId + '"]');
-      if (tabLink) {
-        tabLink.classList.add('activeTab');
-      }
-    }
-  }
+// serviceCardWraps.forEach((servWrap, index)=>{
+//     console.log(servWrap.style.top);
+// })
+
+// function checkDivOnTop(divId) {
+//     var div = document.getElementById(divId);
+//     var rect = div.getBoundingClientRect();
+//     var offsetTop = rect.top;
+
+//     // Remove activeTab class from all tabs
+//     var allTabs = document.querySelectorAll('.tab');
+//     allTabs.forEach(function (tab) {
+//         tab.classList.remove('activeTab');
+//     });
+
+//     if (offsetTop <= 100) {
+//         var tabLink = document.querySelector('[href="#' + divId + '"]');
+//         if (tabLink) {
+//             tabLink.classList.add('activeTab');
+//         }
+//     }
+// }
 
 const addBtns = document.querySelectorAll('.addBtn');
 const countDiv = document.querySelectorAll('.countdiv');
@@ -84,7 +88,7 @@ addBtns.forEach((addBtn, index) => {
             popupContainer.style.display = 'flex';
             if (localStorage.getItem('userno').length >= 10) {
                 popupContainer.style.display = 'none';
-            }else{
+            } else {
                 popupContainer.style.display = 'flex';
             }
         }
@@ -114,17 +118,32 @@ addBtns.forEach((addBtn, index) => {
     });
 });
 
-crossBtn.addEventListener('click', ()=>{
+crossBtn.addEventListener('click', () => {
     popupContainer.style.display = 'none';
     noInput.value = '+91';
 })
 
-nextBtn.addEventListener('click', ()=>{
+nextBtn.addEventListener('click', () => {
     if (noInput.value.length < 13) {
         alert('please enter a valid mobile number');
-    }else{
+    } else {
         localStorage.setItem('userno', noInput.value)
         popupContainer.style.display = 'none';
         console.log('this is localstorage', localStorage.getItem('userno'));
     }
 })
+
+//api call
+
+const myfunc = ()=>{
+    fetch('https://api.indiantrain.in/api.asmx/LatestSearch')
+        .then(res => res.json())
+        .then((data) =>{
+            console.log(data[0])
+            alert(`thsi is title: ${data[0].Title}`)
+            alert(`thsi is URL: ${data[0].URL}`)
+        })
+        .catch(err => alert('error occured while fetching the data ', err));
+}
+
+$(document).ready(myfunc())

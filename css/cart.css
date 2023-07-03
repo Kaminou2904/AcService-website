@@ -24,6 +24,20 @@ legend {
     width: 100%;
 }
 
+.activeLocationTab{
+    background-color: black !important;
+    color: white !important;
+}
+
+.activeDate{
+    color: #7461C6 !important;
+    border-color: #7461C6 !important;
+}
+.activeTime{
+    color: #7461C6 !important;
+    border-color: #7461C6 !important;
+}
+
 .lineText {
     display: flex;
     align-items: center;
@@ -42,6 +56,12 @@ legend {
     color: #000;
 }
 
+.cartServName{
+    font-size: 16px !important;
+    width: 50%;
+    font-weight: 600 !important;
+}
+
 #crossBtn{
     box-sizing: content-box;
     width: 30px;
@@ -56,6 +76,82 @@ legend {
 .addBtn{
     background-color: #f7f5ff;
 }
+
+/* button styling */
+.btnWrap{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: -15px; */
+    /* box-shadow: 0 0 10px rgb(192, 192, 192); */
+    width: max-content;
+    /* margin: -15px auto 0px auto; */
+    border-radius: 0.375rem;
+}
+
+.minusBtn{
+    /* display: none; */
+    /* z-index: 2; */
+    width: max-content;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+    margin-right: -2px;
+    font-size: 16px;
+    background-color: #f7f5ff;
+    border: none;
+}
+
+.minusBtn:hover{
+    background-color: #f7f5ff;
+    color: #6c757d;
+}
+.minusBtn:active{
+    background-color: #f7f5ff;
+    color: #6c757d;
+}
+
+.countdiv{
+    background-color: #f7f5ff;
+    display: block;
+    border-radius: 0px;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+    border: none;
+}
+
+.countdiv:hover{
+    background-color: #f7f5ff;
+    color: #6c757d;
+}
+.countdiv:active{
+    background-color: #f7f5ff;
+    color: #6c757d;
+}
+
+.addBtn{
+    /* width: 90px; */
+    /* z-index: 2; */
+    background-color: #f7f5ff;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    cursor: pointer;
+    margin-left: -2px;
+    font-size: 16px;
+    border: none;
+}
+
+.addBtn:hover{
+    background-color: #f7f5ff;
+    color: #6c757d;
+}
+.addBtn:active{
+    background-color: #f7f5ff;
+    color: #6c757d;
+}
+
+
 
 #payBtn{
     cursor: pointer;
@@ -105,7 +201,23 @@ legend {
 }
 
 #currentLoca{
-    background-color: #7461C6;
+   padding: 16px 10px;
+   box-shadow: none;
+   padding-bottom: 0px;
+}
+
+#currentLoca::placeholder{
+    color: rgb(195, 195, 195);
+}
+
+#currentLocaField{
+    height: 80px;
+}
+
+#currentLocaLege{
+    font-size: 14px;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 #manualLoca{
@@ -115,8 +227,20 @@ legend {
     margin-top: 10px;
 }
 
-#mobileNo{
-    display: none;
+#building::placeholder{
+    color: rgb(195, 195, 195);
+}
+#landmark::placeholder{
+    color: rgb(195, 195, 195);
+}
+
+#nextBtn1{
+    position: fixed;
+    bottom: 10px;
+    width: 82%;
+    background-color: #7461C6;
+    color: white;
+    display: block !important;
 }
 
 #timeSlot{
@@ -126,21 +250,44 @@ legend {
 .timeCardCont{
     width: 100%;
     overflow: auto;
+    margin-top: 50px !important;
 }
 
 .timeCardWrap{
     width: max-content;
+    margin-bottom: 20px;
 }
 
 .timeCard{
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    height: 50px;
+    white-space: nowrap;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.smTime{
+    overflow-x: auto;
+    display: none;
+}
+
+.smTimeWrap{
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.smTimeCard{
     white-space: nowrap;
 }
 
 #submitBtn{
-    margin-left: auto;
+    margin: 0px auto;
     background-color: #7461C6;
+    position: fixed;
+    bottom: 10px;
+    width: 87%;
 }
 
 #thanku{
@@ -148,6 +295,9 @@ legend {
 }
 
 #done{
+    position: fixed;
     background-color: #7461C6;
     cursor: pointer;
+    bottom: 10px;
+    width: 87%;
 }

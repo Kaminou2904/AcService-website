@@ -8,8 +8,8 @@
     <!-- bootstrap links -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-    
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- font awesome link -->
     <script src="js/fontawesome.js" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
     <div class="main bg">
 
         <div class="cart">
-            <h2 class="cartHeader p-2">Your Cart</h2>
+            <h2 class="cartHeader p-3 bg-white d-flex"><a href="detail.html" class="nav-link"><i class="fas fa-arrow-left me-3 fs-4"></i></a>Your Cart</h2>
             <div class="container pt-3">
                 <div class="delevary">
                     <div class="delevaryWrap bg-white rounded-3 p-3">
@@ -44,36 +44,43 @@
                 <div class="cartBody rounded-3 pb-1 container bg-white">
                     <div class="cartItemWrap pt-3">
                         <div class="cartItem d-flex justify-content-between align-items-center">
-                            <div class="cartServName fs-4">Something</div>
-                            <div class="btns d-flex">
-                                <button class="minusBtn btn  me-2 d-flex" id="minusBtn">-</button>
-                                <button class="addBtn btn  px-3" id="addBtn">1+</button>
+                            <div class="cartServName fs-4">AC jet wash service</div>
+                            <!-- <div class="btns d-flex">
+                                <div class="minusBtn btn  me-2 d-flex" id="minusBtn">-</div>
+                                <div class="addBtn btn  px-3" id="addBtn">1+</div>
+                            </div> -->
+                            <div class="btnWrap">
+                                <span class="minusBtn btn btn-outline-secondary" id="minusBtn">-</span>
+                                <span class="countdiv btn btn-outline-secondary fw-bold" id="countBtn">1</span>
+                                <span class="addBtn btn btn-outline-secondary fw-bold" id="addBtn">+</span>
                             </div>
                             <div class="cartServPrice fw-bolder fs-5">$999</div>
                         </div>
-                        <hr>
+                        <hr class="border-secondary">
                     </div>
                     <div class="cartItemWrap">
                         <div class="cartItem d-flex justify-content-between align-items-center">
-                            <div class="cartServName fs-4">Something</div>
-                            <div class="btns d-flex">
-                                <button class="minusBtn btn  me-2 d-flex" id="minusBtn">-</button>
-                                <button class="addBtn btn  px-3" id="addBtn">1+</button>
+                            <div class="cartServName fs-4">AC installation</div>
+                            <div class="btnWrap">
+                                <span class="minusBtn btn btn-outline-secondary" id="minusBtn">-</span>
+                                <span class="countdiv btn btn-outline-secondary fw-bold" id="countBtn">1</span>
+                                <span class="addBtn btn btn-outline-secondary fw-bold" id="addBtn">+</span>
                             </div>
                             <div class="cartServPrice fw-bolder fs-5">$999</div>
                         </div>
-                        <hr>
+                        <hr class="border-secondary">
                     </div>
                     <div class="cartItemWrap">
                         <div class="cartItem d-flex justify-content-between align-items-center">
-                            <div class="cartServName fs-4">Something</div>
-                            <div class="btns d-flex">
-                                <button class="minusBtn btn  me-2 d-flex" id="minusBtn">-</button>
-                                <button class="addBtn btn  px-3" id="addBtn">1+</button>
+                            <div class="cartServName fs-4">Home cleaning</div>
+                            <div class="btnWrap">
+                                <span class="minusBtn btn btn-outline-secondary" id="minusBtn">-</span>
+                                <span class="countdiv btn btn-outline-secondary fw-bold" id="countBtn">1</span>
+                                <span class="addBtn btn btn-outline-secondary fw-bold" id="addBtn">+</span>
                             </div>
                             <div class="cartServPrice fw-bolder fs-5">$999</div>
                         </div>
-                        <hr>
+                        <hr class="border-secondary">
                     </div>
                 </div>
             </div>
@@ -105,16 +112,16 @@
             </div>
             <div class="billWrap p-3 rounded-3 bg-white">
                 <div class="totalServ d-flex justify-content-between">
-                    <div class="totalText fs-4 fw-bold">Total Services</div>
+                    <div class="totalText fs-5 fw-bold">Total Services</div>
                     <div class="totalPrice fw-bolder fs-4">$999</div>
                 </div>
                 <div class="gst d-flex justify-content-between">
-                    <div class="gstText fs-4 fw-bold">GST Tax</div>
+                    <div class="gstText fs-5 fw-bold">GST Tax</div>
                     <div class="gstPrice fw-bolder fs-4">$99</div>
                 </div>
                 <hr>
                 <div class="totalBill d-flex justify-content-between">
-                    <div class="totalBillText fs-4 fw-bold">Total Amount</div>
+                    <div class="totalBillText fs-5 fw-bold">Total Amount</div>
                     <div class="totalBillPrice fw-bolder fs-4">$1098</div>
                 </div>
             </div>
@@ -130,87 +137,95 @@
 
         <div class="popupContainer">
             <div class="popup container p-3 bg-white">
-                <div class="crossBtnWrap mb-2">
-                    <div id="crossBtn"
-                        class="bg-secondary text-white text-center rounded-circle d-flex justify-content-center align-items-center fs-2">
-                        &times;
+                <div class="popupHeading d-flex justify-content-between text-end">
+                    <h4 class="popuph4">Booking Schedule</h4>
+                    <div class="crossBtnWrap mb-2">
+                        <div id="crossBtn"
+                            class="bg-secondary text-white text-center rounded-circle d-flex justify-content-center align-items-center fs-2 ms-auto">
+                            &times;
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0 p-0 mb-4">
+                <div class="extraInfo">
+                    <div class="forWhome mb-3 container">
+                        <input class="me-1" type="radio" value="myself" name="forWhome" checked="checked" id="myself">Myself
+                        <input class="ms-2 me-1" type="radio" value="someone else" name="forWhome" id="someone">Someone else
+                    </div>
+                    <div class="locaitonDiv">
+                        <div class="locationWrap d-flex mb-5 container">
+                            <div class="locationTab activeLocationTab home p-1 px-2 bg-light border me-2 rounded-2">Home</div>
+                            <div class="locationTab work p-1 px-2 bg-light border me-2 rounded-2">Work</div>
+                            <div class="locationTab hotel p-1 px-2 bg-light border me-2 rounded-2">Hotel</div>
+                            <div class="locationTab other p-1 px-2 bg-light border me-2 rounded-2">Other</div>
+                        </div>
                     </div>
                 </div>
                 <div class="popupForm">
                     <div id="addressContainer" class="addressContainer container">
-                        <button id="currentLoca" class="currentLoca btn text-white my-2 fs-4 w-100 p-3 rounded-3">Use
-                            Current
-                            Location</button><br>
-                        <button id="manualLocationBtn" class="btn btn-secondary fs-4 w-100 p-3 rounded-3">Enter
-                            Location Manually</button>
-                        <div id="manualLoca" class="text-end">
-                            <!-- <h3 class="mb-2">Manual Location</h3> -->
-                            <fieldset class="border p-2 pt-0 mb-2 text-start">
-                                <legend class="w-auto py-1 pb-0 border-bottom-0">
-                                Building Name</legend>
-                                <input id="building" type="text" class="form-control my-2 fs-5 "
-                                    placeholder="Ex. Powai Plaza">
-                            </fieldset>
-                                <fieldset class="border p-2 pt-0 mb-2 text-start">
-                                    <legend class="w-auto py-1 pt-0 border-bottom-0">Landmark</legend>
-                                    <input id="landmark" type="text" class="form-control my-2 fs-5 "
-                                    placeholder="Ex. near Tanishq">
-                                </fieldset>
-                                <fieldset class="border p-2 pt-0 mb-2 text-start">
-                                    <legend class="w-auto py-1 pt-0 border-bottom-0">Region</legend>
-                                    <input id="region" type="text" class="form-control my-2 fs-5 "
-                                    placeholder="Ex. Bandra, Powai">
-                                </fieldset>
-                            
-                            <button id="nextBtn1" class="ms-auto btn btn-secondary rounded-3">Next <i
-                                    class="fas fa-arrow-right ms-2 "></i></button>
-                        </div>
-                    </div>
-                    <!-- <div id="mobileNo" class="text-end my-2">
-                        <fieldset class="border p-2 pt-0 mb-2 text-start">
-                            <legend class="w-auto py-1 pt-0 border-bottom-0">Phone number</legend>
-                            <input type="tel" id="mobNo" class="form-control fs-5 my-2" placeholder="enter mobile number">
+                        <fieldset id="currentLocaField" class="border p-0 px-2 py-0 m-0 mb-2 text-start rounded-2">
+                            <legend id="currentLocaLege" class="w-auto p-0 m-0 border-bottom-0">Enter your Region
+                            </legend>
+                            <input id="currentLoca" class="m-0 border-0 fs-5 form-control w-100 rounded-3"
+                                placeholder="Ex. Andheri West">
                         </fieldset>
-                        
-                        <button id="nextBtn2" class="ms-auto btn btn-secondary rounded-3">Next <i
-                                class="fas fa-arrow-right ms-2 "></i></button>
-                    </div> -->
-                    <div class="timeSlot text-end" id="timeSlot">
+
+                        <div id="manualLoca" class="">
+                            <input id="building" type="text" class="form-control fs-5 p-3"
+                                placeholder="Flat no. and buliding name">
+                            <input id="landmark" type="text" class="form-control p-3 fs-5 mt-2 "
+                                placeholder="Enter landmark">
+                        </div>
+                        <div id="nextBtn1" class="btn mt-2 rounded-3 fs-5">Next<i
+                                class="fas fa-arrow-right ms-2 "></i></div>
+                    </div>
+                    <div class="timeSlot text-start" id="timeSlot">
                         <div class="timeCardCont ">
                             <div class="timeCardWrap row container">
                                 <div
-                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
-                                    <p class="date my-0">26 JUN</p>
-                                    <p class="time my-0">10am - 12pm</p>
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
+                                    <p class="date my-0">Today</p>
                                 </div>
                                 <div
-                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
-                                    <p class="date my-0">26 JUN</p>
-                                    <p class="time my-0">12pm - 2pm</p>
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
+                                    <p class="date my-0">Tommorrow</p>
                                 </div>
                                 <div
-                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
-                                    <p class="date my-0">26 JUN</p>
-                                    <p class="time my-0">2pm - 4pm</p>
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
+                                    <p class="date my-0">4 Jul</p>
                                 </div>
                                 <div
-                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
-                                    <p class="date my-0">26 JUN</p>
-                                    <p class="time my-0">4pm - 6pm</p>
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
+                                    <p class="date my-0">5 Jul</p>
                                 </div>
                                 <div
-                                    class="timeCard col d-flex flex-column justify-content-center align-items-center text-white bg-dark rounded-3 me-2">
-                                    <p class="date my-0">26 JUN</p>
-                                    <p class="time my-0">6pm - 8pm</p>
+                                    class="timeCard col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
+                                    <p class="date my-0">6 Jul</p>
                                 </div>
                             </div>
                         </div>
-                        <button id="submitBtn" class="btn
-                        rounded-3 mt-2 text-white">Submit</button>
+                        <div class="smTime text-center">
+                            <div class="smTimeWrap d-flex mt-4">
+                                <div class="smTimeCard p-2 px-3 me-1 bg-white border rounded">10:00 am</div>
+                                <div class="smTimeCard p-2 px-3 me-1 bg-white border rounded">
+                                    12:00 pm
+                                </div>
+                                <div class="smTimeCard p-2 px-3 me-1 bg-white border rounded">
+                                    2:00 pm
+                                </div>
+                                <div class="smTimeCard p-2 px-3 me-1 bg-white border rounded">
+                                    4:00 pm
+                                </div>
+                            </div>
+                        </div>
+                        <div id="submitBtn" class="btn
+                        rounded-3 mt-2 text-white fs-5 mx-auto">Submit</div>
                     </div>
-                    <div id="thanku" class="fs-3 my-auto text-center fw-bold">
-                        Thank you very much for booking our services
-                        <button id="done" class="btn fs-4 my-2 mt-5 w-100 rounded-3 text-white">Done</button>
+                    <div id="thanku" class="fs-3 my-auto fw-bold">
+                        <div class="text-center">
+                            Thank you very much for booking our services
+                        </div>
+                        <div id="done" class="btn fs-4 my-2 mt-5 mx-auto rounded-3 text-white">Done</div>
                     </div>
                 </div>
             </div>
@@ -219,6 +234,8 @@
     </div>
 
 
+    <!-- jquery -->
+    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="./js/cart.js"></script>
     <!-- bootstrap javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
