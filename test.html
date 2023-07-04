@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Field Example</title>
+</head>
+
+<body style="height: 200vh;">
+    <input type="text" id="firstInput" onclick="showInputFields()" placeholder="Click here">
+
+    <div id="additionalFields" style="display: none; margin-top: 50vh;">
+        <input type="text" id="secondInput" placeholder="Second input"><br>
+        <input type="text" id="thirdInput" placeholder="Third input">
+    </div>
+
+    <script>
+        function showInputFields() {
+            var additionalFields = document.getElementById("additionalFields");
+            additionalFields.style.display = "block";
+
+            // Scroll to the position of the additional fields
+            additionalFields.scrollIntoView({ behavior: "smooth" });
+        }
+
+    </script>
+</body>
+
+</html>

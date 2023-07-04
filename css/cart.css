@@ -192,8 +192,9 @@ legend {
 
 .popup{
     width: 100%;
-    max-height: 100vh;
-    min-height: 70vh;
+    /* max-height: 100vh; */
+    /* min-height: 100vh; */
+    height: 100vh;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     transition: 0.5s;
@@ -211,7 +212,7 @@ legend {
 }
 
 #currentLocaField{
-    height: 80px;
+    height: 70px;
 }
 
 #currentLocaLege{
@@ -234,10 +235,19 @@ legend {
     color: rgb(195, 195, 195);
 }
 
+.addressContainer{
+    /* display: flex !important; */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55vh;
+    /* background-color: red; */
+}
+
 #nextBtn1{
-    position: fixed;
-    bottom: 10px;
-    width: 82%;
+    /* position: fixed;
+    bottom: 200px; */
+    /* width: 82%; */
+    width: 100%;
     background-color: #7461C6;
     color: white;
     display: block !important;
@@ -270,7 +280,7 @@ legend {
 
 .smTime{
     overflow-x: auto;
-    display: none;
+    /* display: none; */
 }
 
 .smTimeWrap{
@@ -286,8 +296,9 @@ legend {
     margin: 0px auto;
     background-color: #7461C6;
     position: fixed;
-    bottom: 10px;
+    bottom: 140px;
     width: 87%;
+    z-index: 10;
 }
 
 #thanku{
@@ -298,6 +309,6 @@ legend {
     position: fixed;
     background-color: #7461C6;
     cursor: pointer;
-    bottom: 10px;
+    bottom: 140px;
     width: 87%;
 }

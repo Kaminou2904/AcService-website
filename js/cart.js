@@ -75,10 +75,11 @@ addBtns.forEach((addBtn, index) => {
 // payment button
 payBtn.addEventListener('click', () => {
     popupContainer.style.display = 'flex';
-    addressCont.style.display = 'block';
+    addressCont.style.display = 'flex';
     manualLocaDiv.style.display = 'none';
     extraInfo.style.display = 'block';
-    $('.popuph4').text('Booking Schedule');
+    $('.popuph4').text('Address Details');
+    // $('body').css('overflow', 'hidden');
     // manualLocaDiv.style.display = 'none';
 })
 
@@ -94,13 +95,8 @@ payBtn.addEventListener('click', () => {
 // })
 
 currentLocaField.addEventListener('click', () => {
-    // if (manualLocaDiv.style.display == 'block') {
-    //     manualLocaDiv.style.display = 'none';
-    //     currentLocaLege.style.display = 'none';
-    //     currentLoca.placeholder = 'Enter your region';
-    // } else {
         manualLocaDiv.style.display = 'block';
-    // }
+        currentLoca.scrollIntoView({behavior: "smooth"});
 })
 
 locations.forEach((location, index)=>{
@@ -117,11 +113,13 @@ nextBtn1.addEventListener('click', () => {
     timeSlotDiv.style.display = 'block';
     extraInfo.style.display = 'none';
     manualLocaDiv.style.display = 'none';
+    formData.locaiton = $('.activeLocationTab').text();
     formData.address = [{'building': buildingInput.value}, {'landmark': landmarkInput.value}, {'region': currentLoca.value}];
     formData.forWhome = radioData.value;
     buildingInput.value = '';
     landmarkInput.value = '';
     currentLoca.value = '';
+    $('.popuph4').text('Booking Schedule');
 });
 
 crossBtn.addEventListener('click', () => {
@@ -130,6 +128,7 @@ crossBtn.addEventListener('click', () => {
     // mobileNoDiv.style.display = 'none';
     thanku.style.display = 'none';
     manualLocaDiv.style.display = 'none';
+    $('body').css('overflow', 'auto');
 })
 
 submitBtn.addEventListener('click', () => {
@@ -137,7 +136,10 @@ submitBtn.addEventListener('click', () => {
     timeSlotDiv.style.display = 'none';
     manualLocaDiv.style.display = 'none';
     $('.popuph4').text('');
+    formData.time = $('.activeTime').text().trim();
     thanku.style.display = 'block';
+    $('body').css('overflow', 'auto');
+    // $('.smTime').css('display', 'none')
     console.log(formData)
 });
 
@@ -154,13 +156,8 @@ timeCards.forEach((timeCard, index) => {
             t.classList.remove('activeDate')
         })
         timeCard.classList.add('activeDate')
-        const timearr = [];
-        timearr.push(timeCard.innerText);
-        const smtimeCard = $('.smTimeCard')[index];
-        timearr.push(smtimeCard.innerText);
-        formData.time = timearr;
-        console.log('hello from time card ', index);
-        $('.smTime').css('display', 'block')
+        formData.date = $('.activeDate').text().trim();
+        // $('.smTime').css('display', 'block')
     })
 });
 

@@ -138,7 +138,7 @@
         <div class="popupContainer">
             <div class="popup container p-3 bg-white">
                 <div class="popupHeading d-flex justify-content-between text-end">
-                    <h4 class="popuph4">Booking Schedule</h4>
+                    <h4 class="popuph4">Address Details</h4>
                     <div class="crossBtnWrap mb-2">
                         <div id="crossBtn"
                             class="bg-secondary text-white text-center rounded-circle d-flex justify-content-center align-items-center fs-2 ms-auto">
@@ -163,19 +163,22 @@
                 </div>
                 <div class="popupForm">
                     <div id="addressContainer" class="addressContainer container">
-                        <fieldset id="currentLocaField" class="border p-0 px-2 py-0 m-0 mb-2 text-start rounded-2">
-                            <legend id="currentLocaLege" class="w-auto p-0 m-0 border-bottom-0">Enter your Region
-                            </legend>
-                            <input id="currentLoca" class="m-0 border-0 fs-5 form-control w-100 rounded-3"
-                                placeholder="Ex. Andheri West">
-                        </fieldset>
-
-                        <div id="manualLoca" class="">
-                            <input id="building" type="text" class="form-control fs-5 p-3"
-                                placeholder="Flat no. and buliding name">
-                            <input id="landmark" type="text" class="form-control p-3 fs-5 mt-2 "
-                                placeholder="Enter landmark">
+                        <div>
+                            <fieldset id="currentLocaField" class="border p-0 px-2 py-0 m-0 mb-2 text-start rounded-2">
+                                <legend id="currentLocaLege" class="w-auto p-0 m-0 border-bottom-0">Enter your Region
+                                </legend>
+                                <input id="currentLoca" class="m-0 border-0 fs-5 form-control w-100 rounded-3"
+                                    placeholder="Ex. Andheri West">
+                            </fieldset>
+    
+                            <div id="manualLoca" class="">
+                                <input id="building" type="text" class="form-control fs-5 p-3"
+                                    placeholder="Flat no. and buliding name">
+                                <input id="landmark" type="text" class="form-control p-3 fs-5 mt-2 "
+                                    placeholder="Enter landmark">
+                            </div>
                         </div>
+                        
                         <div id="nextBtn1" class="btn mt-2 rounded-3 fs-5">Next<i
                                 class="fas fa-arrow-right ms-2 "></i></div>
                     </div>
@@ -183,7 +186,7 @@
                         <div class="timeCardCont ">
                             <div class="timeCardWrap row container">
                                 <div
-                                    class="timeCard col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
+                                    class="timeCard activeDate col d-flex flex-column justify-content-center align-items-center rounded-3 me-2">
                                     <p class="date my-0">Today</p>
                                 </div>
                                 <div
@@ -206,7 +209,7 @@
                         </div>
                         <div class="smTime text-center">
                             <div class="smTimeWrap d-flex mt-4">
-                                <div class="smTimeCard p-2 px-3 me-1 bg-white border rounded">10:00 am</div>
+                                <div class="smTimeCard activeTime p-2 px-3 me-1 bg-white border rounded">10:00 am</div>
                                 <div class="smTimeCard p-2 px-3 me-1 bg-white border rounded">
                                     12:00 pm
                                 </div>

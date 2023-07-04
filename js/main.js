@@ -1,26 +1,26 @@
 const para = document.getElementById('addPara');
-const paraText = para.innerHTML;
+// const paraText = para.innerHTML;
 const mainHeader = document.querySelector('#mainHeader');
 const locaPopup = document.querySelector('#locaPopup');
 const canclePopup = document.querySelector('#canclePopup');
 
 //function to location popup
-mainHeader.addEventListener('click', ()=>{
-    if(locaPopup.style.display == 'flex'){
-        locaPopup.style.display = 'none';
-    }else{
-        locaPopup.style.display = 'flex'
-    }
-})
+// mainHeader.addEventListener('click', ()=>{
+//     if(locaPopup.style.display == 'flex'){
+//         locaPopup.style.display = 'none';
+//     }else{
+//         locaPopup.style.display = 'flex'
+//     }
+// })
 
-canclePopup.addEventListener('click', ()=>{
-    locaPopup.style.display = 'none';
-})
+// canclePopup.addEventListener('click', ()=>{
+//     locaPopup.style.display = 'none';
+// })
 
-if (paraText.length > 40) {
-    const newText = paraText.slice(0, 40) + '...<i class="fa fa-solid fa-angle-down">';
-    para.innerHTML = newText;
-}
+// if (paraText.length > 40) {
+//     const newText = paraText.slice(0, 40) + '...<i class="fa fa-solid fa-angle-down">';
+//     para.innerHTML = newText;
+// }
 
 document.querySelector(".popupContainer").style.display = "none";
 document.querySelector("#popup").style.bottom = "-60vh";
