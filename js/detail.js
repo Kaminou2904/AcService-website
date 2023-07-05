@@ -1,6 +1,8 @@
 const nav = document.querySelector('#nav');
 const serviceCardWraps = document.querySelectorAll('.serviceCardWrap');
 const sticky = nav.offsetTop;
+const descs = document.querySelectorAll('.serviceDesc');
+const downArrow = document.querySelectorAll('.downArrow');
 
 //function for the tabs
 window.onscroll = function () { stickyFunc() };
@@ -30,28 +32,14 @@ function tabNSec(id) {
     $('[href="#' + id + '"]').addClass('activeTab'); // Add active class to the clicked tab
 }
 
-// serviceCardWraps.forEach((servWrap, index)=>{
-//     console.log(servWrap.style.top);
-// })
-
-// function checkDivOnTop(divId) {
-//     var div = document.getElementById(divId);
-//     var rect = div.getBoundingClientRect();
-//     var offsetTop = rect.top;
-
-//     // Remove activeTab class from all tabs
-//     var allTabs = document.querySelectorAll('.tab');
-//     allTabs.forEach(function (tab) {
-//         tab.classList.remove('activeTab');
-//     });
-
-//     if (offsetTop <= 100) {
-//         var tabLink = document.querySelector('[href="#' + divId + '"]');
-//         if (tabLink) {
-//             tabLink.classList.add('activeTab');
-//         }
-//     }
-// }
+// fucntion to wrap the service description
+descs.forEach((desc, index)=>{
+    const descText = desc.innerText;
+    if(descText.length > 100){
+        const newText = descText.slice(0, 100) + '...<i class="fa fa-solid fa-angle-down ms-1 downArrow">';
+        desc.innerHTML = newText;
+    };
+})
 
 const addBtns = document.querySelectorAll('.addBtn');
 const countDiv = document.querySelectorAll('.countdiv');
@@ -132,18 +120,3 @@ nextBtn.addEventListener('click', () => {
         console.log('this is localstorage', localStorage.getItem('userno'));
     }
 })
-
-//api call
-
-const myfunc = ()=>{
-    fetch('https://api.indiantrain.in/api.asmx/LatestSearch')
-        .then(res => res.json())
-        .then((data) =>{
-            console.log(data[0])
-            alert(`thsi is title: ${data[0].Title}`)
-            alert(`thsi is URL: ${data[0].URL}`)
-        })
-        .catch(err => alert('error occured while fetching the data ', err));
-}
-
-$(document).ready(myfunc())

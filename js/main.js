@@ -18,8 +18,8 @@ const canclePopup = document.querySelector('#canclePopup');
 // })
 
 // if (paraText.length > 40) {
-//     const newText = paraText.slice(0, 40) + '...<i class="fa fa-solid fa-angle-down">';
-//     para.innerHTML = newText;
+    // const newText = paraText.slice(0, 40) + '...<i class="fa fa-solid fa-angle-down">';
+    // para.innerHTML = newText;
 // }
 
 document.querySelector(".popupContainer").style.display = "none";
