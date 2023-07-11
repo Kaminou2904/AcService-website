@@ -46,3 +46,37 @@ function closePopup() {
         popupContainer.style.display = "none";
     }, 300);
 }
+
+
+// function to bring the data from the api 
+
+const categoryCard = document.querySelectorAll('.categoryCard');
+const popupContent = document.querySelectorAll('.popupContent')
+
+categoryCard.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        const cardid = parseInt(card.id)
+        // console.log(cardid);
+        fetch('https://supersavvy.in/api.asmx/GetSubCats?id=' + cardid)
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data.Data);
+                let html = ``;
+                data.Data.forEach((arrData) => {
+                    // console.log(arrData.SubCatName);
+                    html += `
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="${arrData.Image}"
+                            class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                            <p class="trentName fw-bold fs-6 my-0"><a href="${arrData.Link}" class="nav-link">${arrData.SubCatName}</a></p>
+                            </div>
+                        </div>
+                    `;
+                });
+                console.log(html);
+                popupContent[index].innerHTML = html;
+            })
+            .catch((err) => { console.log(err); });
+    });
+});

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1 for api</title>
+</head>
+<style>
+    .cards {
+        min-height: 200px;
+        min-width: 200px;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(207, 207, 207);
+    }
+    .card{
+        display: flex;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+    .card img{
+        width: 20%;
+        margin-right: 10px;
+    }
+    .container{
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <div class="cards" id="1">
+        <h4>Applinces Repair</h4>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="cards" id="2">
+        <h4>Pc</h4>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="cards" id="3">
+        <h4>ac repai</h4>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="cards" id="4">
+        <h4>Home Cleaning</h4>
+        <div class="container">
+
+        </div>
+    </div>
+    <div class="cards" id="5">
+        <h4>Plummbing</h4>
+        <div class="container">
+            
+        </div>
+    </div>
+    <div class="cards" id="6">
+        <h4>Pest Controll</h4>
+        <div class="container">
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.cards');
+        const container = document.querySelectorAll('.container');
+        
+        cards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                const cardid = parseInt(card.id)
+                console.log('this is my id', cardid);
+                fetch('https://supersavvy.in/api.asmx/GetSubCats?id=' + cardid)
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data.Data);
+                        let html = ``;
+                        data.Data.forEach((arrData) => {
+                            console.log(arrData.SubCatName);
+                            html += `
+                                <div class="card">
+                                    <img class="name" src='${arrData.Image}'></img>
+                                    <div class="img"><a href="${arrData.Link}" class="namelink">${arrData.SubCatName}</a></div>
+                                </div>
+                            `
+                        })
+                        console.log(html);
+                        container[index].innerHTML = html;
+                    })
+                    .catch((err) => { console.log(err); });
+            })
+        })
+    </script>
+</body>
+
+</html>

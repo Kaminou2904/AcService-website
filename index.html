@@ -22,8 +22,15 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <title>SuperSavvy | Service at your doorstep</title>
-</head>
 
+    <style>
+        .shimmerStyle{
+            background-size: 400%;
+            background-image: linear-gradient(120deg, #f2f2f2 0%, #f2f2f2 30%, #d9d9d9 45%, #d9d9d9 50%, #f2f2f2 60%, #f2f2f2 100%);
+            animation: shimmer 1s linear infinite;
+        }
+    </style>
+</head>
 <body>
     <!-- main div that wraps everything -->
     <div class="main ">
@@ -63,123 +70,57 @@
         <!-- div for categories -->
         <div class="categories container mt-5">
             <div class="categoryWrap">
-                <div onclick="openPopup(1)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                <div onclick="openPopup(1)" id="3" class="categoryCard text-center d-flex flex-column  align-items-center noShimmer">
                     <img src="./assets/images/AC.png"
                         alt="salon image" class="img-fluid w-75 rounded categoryImg">
                     <p class="text-capitalize w-100 ">AC Rapair</p>
                     <div class="popupContent" id="popupContent">
                         <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/AC.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <img src="https://supersavvy.in/uploads/57202318218892_AC.jpg" class="img-fluid w-25 me-3" alt="ternding service">
                             <div class="trendText">
-                                <p class="trentName fw-bold my-0"><a href="detail.html" class="nav-link">AC repair</a></p>
+                            <p class="trentName fw-bold fs-6 my-0"><a href="https://saasinternational.in/ac-repair.html" class="nav-link">AC  Repair</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div onclick="openPopup(2)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                <div onclick="openPopup(2)" id="4" class="categoryCard text-center d-flex flex-column  align-items-center">
                     <img src="./assets/images/CLEANING.png"
                         alt="salon image" class="img-fluid w-75 rounded categoryImg">
                     <p class="text-capitalize w-100 ">Home cleaning</p>
                     <div class="popupContent" id="popupContent">
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/cleaning-tools-6316321-5193120.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold my-0">Full home cleaning</p>
-                            </div>
-                        </div>
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/CLEANING.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Sofa cleaning</p>
-                            </div>
-                        </div>
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/PLUMBING.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Bathroom cleaning</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <div onclick="openPopup(3)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                <div onclick="openPopup(3)" id="2" class="categoryCard text-center d-flex flex-column  align-items-center">
                     <img src="./assets/images/LAPTOP.png"
                         alt="salon image" class="img-fluid w-75 rounded categoryImg">
                     <p class="text-capitalize w-100">laptop & PC</p>
                     <div class="popupContent" id="popupContent">
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/LAPTOP.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Laptop repair</p>
-                            </div>
-                        </div>
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/LAPTOP.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Computer repair</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <div onclick="openPopup(4)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                <div onclick="openPopup(4)" id="1" class="categoryCard text-center d-flex flex-column  align-items-center">
                     <img src="./assets/images/WASHING MACHINE.png"
                         alt="salon image" class="img-fluid w-75 rounded categoryImg">
                     <p class="text-capitalize w-100 ">Appliances Repair</p>
                     <div class="popupContent" id="popupContent">
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/WASHING MACHINE.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Washing machine</p>
-                            </div>
-                        </div>
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/fridge-6850877-5619027.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Refrigrator</p>
-                            </div>
-                        </div>
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/vintage-tv-4371908-3626671.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">TV</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <div onclick="openPopup(5)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                <div onclick="openPopup(5)" id="5" class="categoryCard text-center d-flex flex-column  align-items-center">
                     <img src="./assets/images/PLUMBING.png"
                         alt="salon image" class="img-fluid w-75 rounded categoryImg">
                     <p class="text-capitalize w-100 ">Pulmbing</p>
                     <div class="popupContent" id="popupContent">
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/PLUMBING.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Plumbing</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-                <div onclick="openPopup(6)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                <div onclick="openPopup(6)" id="6" class="categoryCard text-center d-flex flex-column  align-items-center">
                     <img src="./assets/images/PEST.png"
                         alt="salon image" class="img-fluid w-75 rounded categoryImg">
                     <p class="text-capitalize w-100">pest control</p>
                     <div class="popupContent" id="popupContent">
-                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
-                            <img src="./assets/images/PEST.png"
-                                class="img-fluid w-25 me-3" alt="ternding service">
-                            <div class="trendText">
-                                <p class="trentName fw-bold fs-6 my-0">Pest control</p>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>

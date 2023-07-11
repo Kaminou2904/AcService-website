@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shimmerStyle{
+    background-size: 400%;
+    background-image: linear-gradient(120deg, #f2f2f2 0%, #f2f2f2 30%, #d9d9d9 45%, #d9d9d9 50%, #f2f2f2 60%, #f2f2f2 100%);
+    animation: shimmer 1s linear infinite;
+}
+
+@keyframes shimmer {
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+.bannerImg{
+    height: 200px;
+}
+
+.tab{
+    width: 30%;
+}
+
+.itemCard{
+    width: 320px;
+}
+
+.cardImg{
+    width: 100px;
+    height: 100px;
+}
