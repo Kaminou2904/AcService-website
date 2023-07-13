@@ -43,6 +43,10 @@
     src: url('../font/plusjakarta/PlusJakartaSans-ExtraBold.ttf');
 }
 @font-face {
+    font-family: 'font2-bold';
+    src: url('../font/plusjakarta/PlusJakartaSans-Bold.ttf');
+}
+@font-face {
     font-family: 'font2-regular';
     src: url('../font/plusjakarta/PlusJakartaSans-Regular.ttf');
 }
@@ -336,6 +340,7 @@
 
 .trentName{
     font-size: 20px !important;
+    font-family: 'font2-bold', sans-serif;
 }
 
 .trendItem img{
