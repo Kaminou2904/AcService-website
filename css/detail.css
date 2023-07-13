@@ -177,8 +177,19 @@ html{
     box-shadow: 0 0 10px rgb(201, 201, 201);
 } */
 
+.bg1{
+    background-color: rgb(187, 187, 255);
+}
+.bg2{
+    background-color: rgb(255, 190, 190);
+}
+.bg3{
+    background-color: rgb(197, 255, 197);
+}
+
 .bannerIcon{
     width: 30px;
+    /* background-color: #f7f5ff; */
 }
 
 .bannerText{
@@ -460,9 +471,9 @@ html{
         width: 70%;
     }
     
-    .bannerImg{
+    /* .bannerImg{
         margin-left: 20px;
-    }
+    } */
 
     .serviceCard{
         width: 350px;
