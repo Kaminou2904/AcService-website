@@ -1,30 +1,42 @@
 @font-face {
     font-family: 'font-extrabold';
-    src: url('../font/Metropolis-ExtraBold.otf');
+    src: url('../font/metropoli/Metropolis-ExtraBold.otf');
 }
 @font-face {
     font-family: 'font-bold';
-    src: url('../font/Metropolis-Bold.otf');
+    src: url('../font/metropoli/Metropolis-Bold.otf');
 }
 @font-face {
     font-family: 'font-medium';
-    src: url('../font/Metropolis-Medium.otf');
+    src: url('../font/metropoli/Metropolis-Medium.otf');
 }
 @font-face {
-    font-family: 'font-regural';
-    src: url('../font/Metropolis-Regular.otf');
-}
-@font-face {
-    font-family: 'font-extrabold';
-    src: url('../font/Metropolis-ExtraBold.otf');
+    font-family: 'font-regular';
+    src: url('../font/metropoli/Metropolis-Regular.otf');
 }
 @font-face {
     font-family: 'font-extrabold';
-    src: url('../font/Metropolis-ExtraBold.otf');
+    src: url('../font/metropoli/Metropolis-ExtraBold.otf');
 }
 @font-face {
     font-family: 'font-extrabold';
-    src: url('../font/Metropolis-ExtraBold.otf');
+    src: url('../font/metropoli/Metropolis-ExtraBold.otf');
+}
+@font-face {
+    font-family: 'font-extrabold';
+    src: url('../font/metropoli/Metropolis-ExtraBold.otf');
+}
+@font-face {
+    font-family: 'font1-extrabold';
+    src: url('../font/proximanova/Fontspring-DEMO-proximanova-extrabold.otf');
+}
+@font-face {
+    font-family: 'font1-regular';
+    src: url('../font/proximanova/Fontspring-DEMO-proximanova-regular.otf');
+}
+@font-face {
+    font-family: 'font1-light';
+    src: url('../font/proximanova/Fontspring-DEMO-proximanova-light.otf');
 }
 
 
@@ -32,6 +44,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'font-regular',;
 }
 
 .mainLoader {
@@ -177,8 +190,8 @@
     margin-top: 40px;
     margin-bottom: 20px;
     color: #755BCD;
-    font-family: 'font-extrabold', sans-serif;
-    letter-spacing: -0.5px;
+    font-family: 'font1-extrabold', sans-serif;
+    /* letter-spacing: -0.5px; */
 }
 
 .searchBox{
