@@ -38,13 +38,25 @@
     font-family: 'font1-light';
     src: url('../font/proximanova/Fontspring-DEMO-proximanova-light.otf');
 }
+@font-face {
+    font-family: 'font2-extrabold';
+    src: url('../font/plusjakarta/PlusJakartaSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'font2-regular';
+    src: url('../font/plusjakarta/PlusJakartaSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'font2-light';
+    src: url('../font/plusjakarta/PlusJakartaSans-Light.ttf');
+}
 
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'font-regular',;
+    font-family: 'font-regular', sans-serif;
 }
 
 .mainLoader {
@@ -190,8 +202,8 @@
     margin-top: 40px;
     margin-bottom: 20px;
     color: #755BCD;
-    font-family: 'font1-extrabold', sans-serif;
-    /* letter-spacing: -0.5px; */
+    font-family: 'font2-extrabold', sans-serif;
+    letter-spacing: -1px;
 }
 
 .searchBox{
