@@ -89,6 +89,11 @@
     height: 85%;
 }
 
+.navLi{
+    list-style: none;
+    color: #646464;
+}
+
 .fa-map-marker-alt{
     color: #7461C6;
     font-size: 16px;
