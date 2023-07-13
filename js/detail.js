@@ -1,3 +1,9 @@
+const shimmerDiv = document.querySelector('.mainShimmer');
+window.onload = function(){
+    shimmerDiv.style.display = 'none'
+}
+
+
 const nav = document.querySelector('#nav');
 const serviceCardWraps = document.querySelectorAll('.serviceCardWrap');
 const sticky = nav.offsetTop;

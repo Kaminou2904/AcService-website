@@ -1,3 +1,10 @@
+const mainLoader = document.querySelector('.mainLoader');
+window.onload = function(){
+    mainLoader.style.display = 'none';
+}
+
+
+
 const para = document.getElementById('addPara');
 // const paraText = para.innerHTML;
 const mainHeader = document.querySelector('#mainHeader');

@@ -16,6 +16,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/shimmer.css">
 
     <!-- owl carousel cdn link for css -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -25,6 +26,31 @@
 </head>
 
 <body>
+
+    <div class="mainShimmer">
+        <div class="mainHeadershimmer container py-2 bg-light d-flex justify-content-between">
+            <div class="shimmerStyle shimmerheaderName px-5 py-4 rounded-3 w-25"></div>
+            <div class="shimmerStyle shimmerheaderBtn px-5 py-4 rounded-3 w-25"></div>
+        </div>
+        <div class="banner container">
+            <div class="shimmerbannerImg shimmerStyle rounded-3 mt-3 w-100"></div>
+            <div class="shimmerheading shimmerStyle p-5 py-4 mt-3 rounded-3 w-25"></div>
+            <div class="shimmerbannerCarousel shimmerStyle mt-3 p-4 w-100 rounded-3"></div>
+        </div>
+        <div class="shimmmertabsWrap">
+            <div class="shimmertabs mt-4 container d-flex">
+                <div class="shimmertab col-4 shimmerStyle me-2 py-3 rounded-3"></div>
+                <div class="shimmertab col-4 shimmerStyle me-2 py-3 rounded-3"></div>
+                <div class="shimmertab col-4 shimmerStyle me-2 py-3 rounded-3"></div>
+            </div>
+        </div>
+        <div class="shimmeritemCardWrap container mt-5 d-flex justify-content-start flex-wrap">
+            <div class="shimmeritemCard bg-light d-flex justify-content-between align-items-center p-2 mt-3">
+                <div class="shimmercardData w-50 py-4 rounded-3 shimmerStyle"></div>
+                <div class="shimmercardImg shimmerStyle rounded-3"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="main">
         <div class="BrandsWrap p-0">
@@ -436,7 +462,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     
@@ -481,7 +506,12 @@
                 $('#carouselCounter').text(e.item.index - 1 + '/' + e.item.count)
             }
 
-            carouselCounter({ item: { index: 1, count: owl.find('.item').length } })
+            carouselCounter({ item: { index: 1, count: owl.find('.item').length } });
+
+            // document.addEventListener('DOMContentLoaded', ()=>{
+            //     const shimmerDiv = document.querySelector('.mainShimmer');
+            //     shimmerDiv.style.display = 'block';
+            // })
         });
     </script>
 </body>
