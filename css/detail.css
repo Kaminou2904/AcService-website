@@ -105,7 +105,7 @@ html{
 .chosenServWrap{
     /* display: flex; */
     display: none;
-    background-color: #7461C6;
+    background-color: white;
 }
 
 .choseServPrice{
@@ -421,6 +421,7 @@ html{
 
 #proceedBtn{
     cursor: pointer;
+    background-color: #7461C6;
 }
 
 .popupContainer2{
