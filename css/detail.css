@@ -177,6 +177,10 @@ html{
     box-shadow: 0 0 10px rgb(201, 201, 201);
 } */
 
+.bannerIcon{
+    width: 30px;
+}
+
 .bannerText{
     width: 100%;
 }
