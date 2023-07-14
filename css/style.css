@@ -262,6 +262,11 @@
 
 .infoTag{
     width: 90% !important;
+    position: relative;
+}
+
+.infoTag span{
+    background-color: #755BCD !important;
 }
 
 .categoryImg{
