@@ -337,6 +337,7 @@
 .trendItem{
     width: 350px;
     box-shadow: 0 0 10px rgba(112, 112, 112, 0.1);
+    cursor: pointer;
 }
 
 .trentName{
@@ -346,7 +347,7 @@
 
 .trendItem img{
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .trendItem p{

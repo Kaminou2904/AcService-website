@@ -87,3 +87,9 @@ categoryCard.forEach((card, index) => {
             .catch((err) => { console.log(err); });
     });
 });
+
+// function for redirecting the user to the detail page after clicking on the categorycard
+
+function navigateToDetail(url){
+    window.location.href = url; 
+}
