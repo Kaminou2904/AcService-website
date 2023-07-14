@@ -190,6 +190,7 @@ html{
 .bannerIcon{
     width: 30px;
     /* background-color: #f7f5ff; */
+    margin: 5px;
 }
 
 .bannerText{

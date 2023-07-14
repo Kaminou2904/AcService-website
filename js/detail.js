@@ -70,7 +70,7 @@ addBtns.forEach((addBtn, index) => {
         // console.log(counts[countKey]);
 
         if (counts[countKey] !== 0) {
-            chooseServ.style.display = 'none';
+            // chooseServ.style.display = 'none';
             chosenServ.style.display = 'flex';
             addBtn.innerHTML = '+';
             addBtn.style.width = 'max-content';
@@ -101,7 +101,7 @@ addBtns.forEach((addBtn, index) => {
                 addBtn.style.width = '90px';
                 addBtn.style.borderBottomLeftRadius = '0.375rem';
                 addBtn.style.borderTopLeftRadius = '0.375rem';
-                chooseServ.style.display = 'flex';
+                // chooseServ.style.display = 'flex';
                 chosenServ.style.display = 'none';
                 countDiv[index].style.display = 'none';
                 minusBtns[index].style.display = 'none';
