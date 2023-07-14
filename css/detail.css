@@ -7,6 +7,10 @@
     src: url('../font/plusjakarta/PlusJakartaSans-Bold.ttf');
 }
 @font-face {
+    font-family: 'font2-semibold';
+    src: url('../font/plusjakarta/PlusJakartaSans-SemiBold.ttf');
+}
+@font-face {
     font-family: 'font2-regular';
     src: url('../font/plusjakarta/PlusJakartaSans-Regular.ttf');
 }
@@ -400,6 +404,7 @@ html{
     line-height: 1.15;
     font-size: 13px;
     margin-top: 5px;
+    font-family: 'font2-semibold', sans-serif;
 }
 
 .serviceBanner{
@@ -439,6 +444,7 @@ html{
 .userReview{
     margin-left: 10px;
     font-size: 14px;
+    font-family: 'font2-semibold', sans-serif;
 }
 
 /* styling for the proceed popup */
