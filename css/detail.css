@@ -73,6 +73,7 @@ html{
 
 .detailBack h2{
     margin-top: 5px;
+    font-family: 'font2-bold', sans-serif;
 }
 
 .backBtn{
@@ -183,12 +184,14 @@ html{
 }
 
 .serviceWrap h1{
-    font-weight:650;
+    /* font-weight:650; */
     font-size: 23px;
+    font-family: 'font2-bold', sans-serif;
 }
 
 .serviceWrap p{
     font-size: 12px;
+    font-family: 'font2-bold', sans-serif;
 }
 
 /* .bannerWrap{
@@ -299,7 +302,8 @@ html{
 
 .serviceName{
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-family: 'font2-bold', sans-serif;
 }
 
 .serviceOffer{
@@ -417,8 +421,9 @@ html{
 
 .userName{
     font-size: 18px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 0;
+    font-family: 'font2-bold', sans-serif;
 }
 
 .userRating i{
