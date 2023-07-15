@@ -73,7 +73,12 @@ html{
 
 .contactBtn{
     background-color: #7461C6;
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-family: 'font2-extrabold', sans-serif;
+}
+
+.contactBtn a{
+    font-family: 'font2-extrabold', sans-serif;
 }
 
 .contactBtn:hover{
@@ -312,7 +317,7 @@ html{
 .serviceName{
     font-size: 20px;
     /* font-weight: 700; */
-    font-family: 'font2-bold', sans-serif;
+    font-family: 'font2-extrabold', sans-serif;
 }
 
 .serviceOffer{
@@ -324,6 +329,7 @@ html{
 .serviceCardPrice{
     font-size: 16px;
     font-weight: 700;
+    font-family: 'font2-extrabold', sans-serif;
 }
 
 .serviceCardPrice span{
