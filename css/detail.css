@@ -73,6 +73,11 @@ html{
 
 .contactBtn{
     background-color: #7461C6;
+    font-weight: 700;
+}
+
+.contactBtn:hover{
+    background-color: #5540b1;
 }
 
 .detailBack h2{
@@ -305,7 +310,7 @@ html{
 }
 
 .serviceName{
-    font-size: 16px;
+    font-size: 20px;
     /* font-weight: 700; */
     font-family: 'font2-bold', sans-serif;
 }
@@ -317,7 +322,7 @@ html{
 }
 
 .serviceCardPrice{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
 }
 
