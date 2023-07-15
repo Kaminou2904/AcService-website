@@ -320,6 +320,10 @@
     font-size: 20px !important;
     font-family: 'font2-bold', sans-serif;
 }
+.trentName a{
+    font-size: 20px !important;
+    font-family: 'font2-bold', sans-serif;
+}
 
 .trendItem img{
     border-radius: 10px;
