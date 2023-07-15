@@ -56,6 +56,10 @@ legend {
     border-color: #7461C6 !important;
 }
 
+.billWrap div{
+    font-family: 'font2-extrabold', sans-serif;
+}
+
 .lineText {
     display: flex;
     align-items: center;
