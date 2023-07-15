@@ -145,8 +145,10 @@ html{
     font-size: 16px;
 }
 
-.noOfItems{
-    border-right: 3px solid white;
+.noOfItems, .price{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'font2-extrabold', sans-serif;
 }
 
 .proceed p{
